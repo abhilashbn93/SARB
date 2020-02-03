@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>SARB Project - sarb Apps</comment>
+<entry key="createdBy">sreddygurrala</entry>
+<entry key="name">sarb.ui.apps</entry>
+<entry key="created">2020-01-27T23:46:29.070+0530</entry>
+<entry key="groupId">com.sarb</entry>
+<entry key="version">0.0.1-SNAPSHOT</entry>
+<entry key="requiresRoot">false</entry>
+<entry key="group">sarb-content-packages</entry>
+<entry key="description">Module for SARB Project - sarb</entry>
+<entry key="artifactId">sarb.ui.apps</entry>
+<entry key="path">/etc/packages/sarb-content-packages/sarb.ui.apps.zip</entry>
+</properties>

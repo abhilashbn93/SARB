@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/platform/platform.iml" filepath="$PROJECT_DIR$/platform/platform.iml" />
+      <module fileurl="file://$PROJECT_DIR$/platform/core/platform.sarb.core.iml" filepath="$PROJECT_DIR$/platform/core/platform.sarb.core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/platform/ui.apps/platform.ui.apps.iml" filepath="$PROJECT_DIR$/platform/ui.apps/platform.ui.apps.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sarb/sarb.iml" filepath="$PROJECT_DIR$/sarb/sarb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sarb-site.iml" filepath="$PROJECT_DIR$/sarb-site.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ui.content/sarb-site.ui.content.iml" filepath="$PROJECT_DIR$/ui.content/sarb-site.ui.content.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sarb/core/sarb.core.iml" filepath="$PROJECT_DIR$/sarb/core/sarb.core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sarb/ui.apps/sarb.ui.apps.iml" filepath="$PROJECT_DIR$/sarb/ui.apps/sarb.ui.apps.iml" />
+    </modules>
+  </component>
+</project>

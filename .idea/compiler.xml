@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="platform.ui.apps" />
+        <module name="sarb-site.ui.content" />
+        <module name="sarb.ui.apps" />
+        <module name="platform.sarb.core" />
+        <module name="sarb.core" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="platform" target="1.5" />
+      <module name="platform.sarb.core" target="1.8" />
+      <module name="platform.ui.apps" target="1.8" />
+      <module name="sarb" target="1.5" />
+      <module name="sarb-site" target="1.5" />
+      <module name="sarb-site.ui.content" target="1.8" />
+      <module name="sarb.core" target="1.8" />
+      <module name="sarb.ui.apps" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

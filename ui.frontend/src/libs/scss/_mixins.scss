@@ -1,0 +1,240 @@
+@mixin font($fontSize: 1em, $fontFamily: 'Lato', $color: $black, $font-weight: 'normal', $line-height: 'normal', $letter-spacing: 'normal') {
+  color: $color;
+  font-family: $fontFamily, Arial, sans-serif;
+  font-size: $fontSize;
+
+  @if $font-weight=='normal' {
+    font-weight: normal;
+  }
+
+  @else {
+    font-weight: $font-weight;
+  }
+
+  @if $line-height=='normal' {
+    line-height: normal;
+  }
+
+  @else {
+    line-height: $line-height;
+  }
+
+  @if $letter-spacing=='normal' {
+    letter-spacing: normal;
+  }
+
+  @else {
+    letter-spacing: $letter-spacing;
+  }
+}
+
+@mixin flex {
+  display: -webkit-box;
+  /** Safari **/
+  display: -ms-flexbox;
+  /** IE10 **/
+  display: -webkit-flex;
+  /** Chrome **/
+  display: flex;
+}
+
+@mixin flex-flow ($direction: 'row', $wrap: 'initial') {
+  flex-direction: $direction;
+  flex-wrap: $wrap;
+}
+
+@mixin justify-content ($alignStyle) {
+  justify-content: $alignStyle;
+}
+
+@mixin wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@mixin MediaQueries($mediaquery) {
+  @media #{$mediaquery} {
+    @content;
+  }
+}
+
+@mixin get-bg-colors($sameLevel: '') {
+  #{$sameLevel}.bg-red {
+    background: $red2;
+  }
+
+  #{$sameLevel}.bg-orange {
+    background: $orange2;
+  }
+
+  #{$sameLevel}.bg-green {
+    background: $green;
+  }
+
+  #{$sameLevel}.bg-cyan {
+    background: $cyan;
+  }
+
+  #{$sameLevel}.bg-blue {
+    background: $blue5;
+  }
+
+  #{$sameLevel}.bg-dark-blue {
+    background: $blue6;
+  }
+
+  #{$sameLevel}.bg-black {
+    background: $black2;
+  }
+
+  #{$sameLevel}.bg-grey {
+    background: $grey19;
+  }
+
+  #{$sameLevel}.bg-white {
+    background: $white;
+  }
+}
+
+@mixin get-font-colors($sameLevel: '') {
+  #{$sameLevel}.color-red {
+    color: $red2;
+  }
+
+  #{$sameLevel}.color-orange {
+    color: $orange2;
+  }
+
+  #{$sameLevel}.color-green {
+    color: $green;
+  }
+
+  #{$sameLevel}.color-cyan {
+    color: $cyan;
+  }
+
+  #{$sameLevel}.color-blue {
+    color: $blue5;
+  }
+
+  #{$sameLevel}.color-dark-blue {
+    color: $blue6;
+  }
+
+  #{$sameLevel}.color-black {
+    color: $black2;
+  }
+
+  #{$sameLevel}.color-grey {
+    color: $grey19;
+  }
+
+  #{$sameLevel}.color-white {
+    color: $white;
+  }
+}
+
+@mixin get-font-sizes($sameLevel: '') {
+  #{$sameLevel}.font-12 {
+    font-size: 12px;
+  }
+
+  #{$sameLevel}.font-18 {
+    font-size: 18px;
+  }
+
+  #{$sameLevel}.font-24 {
+    font-size: 24px;
+  }
+
+  #{$sameLevel}.font-26 {
+    font-size: 26px;
+  }
+
+  #{$sameLevel}.font-28 {
+    font-size: 28px;
+  }
+
+  #{$sameLevel}.font-36 {
+    font-size: 36px;
+  }
+
+  #{$sameLevel}.font-80 {
+    font-size: 80px;
+  }
+
+  #{$sameLevel}.font-52 {
+    font-size: 52px;
+  }
+}
+
+@mixin get-cta-colors($sameLevel: '') {
+  #{$sameLevel}.red {
+    button,
+    .button {
+      background: $red5;
+
+      &:hover,
+      &:active {
+        background: $red6;
+      }
+    }
+  }
+
+  #{$sameLevel}.orange {
+    button,
+    .button {
+      background: $orange2;
+
+      &:hover,
+      &:active {
+        background: $orange;
+      }
+    }
+  }
+
+  #{$sameLevel}.grey {
+    button,
+    .button {
+      background: $grey21;
+
+      &:hover,
+      &:active {
+        background: $grey22;
+      }
+    }
+  }
+}
+
+@mixin placeholder {
+  &::-webkit-input-placeholder {
+    @content;
+  }
+
+  &:-moz-placeholder {
+    @content;
+  }
+
+  &::-moz-placeholder {
+    @content;
+  }
+
+  &:-ms-input-placeholder {
+    @content;
+  }
+}
+
+@mixin object-fit($fit: fill, $position: null) {
+  -o-object-fit: $fit;
+  object-fit: $fit;
+
+  @if $position {
+    -o-object-position: $position;
+    object-position: $position;
+    font-family: 'object-fit: #{$fit}; object-position: #{$position}';
+  }
+
+  @else {
+    font-family: 'object-fit: #{$fit}';
+  }
+}

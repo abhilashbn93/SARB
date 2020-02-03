@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/apps/sarb-project/platform">
+        <exclude pattern="/apps/sarb-project/platform/install"/>
+    </filter>
+    <filter root="/apps/msm/sarb-projectblueprint"/>
+
+    <filter root="/apps/sling/servlet/errorhandler"/>
+
+    <filter root="/conf/sarb-project/platform"/>
+
+</workspaceFilter>

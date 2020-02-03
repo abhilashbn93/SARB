@@ -1,0 +1,41 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1580148986592
+Build-Jdk: 1.8.0_201
+Built-By: sreddygurrala
+Bundle-Description: Module for SARB Project - sarb
+Bundle-ManifestVersion: 2
+Bundle-Name: SARB Project - sarb Bundle
+Bundle-SymbolicName: com.sarb.core
+Bundle-Version: 0.0.1.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Export-Package: sarb.core.filters;version="1.0";uses:="javax.servlet",sa
+ rb.core.listeners;version="1.0";uses:="org.osgi.service.event",sarb.cor
+ e.models;version="1.0";uses:="javax.annotation,org.apache.sling.api.res
+ ource,org.apache.sling.models.annotations,org.apache.sling.models.annot
+ ations.injectorspecific",sarb.core.schedulers;version="1.0",sarb.core.s
+ ervlets;version="1.0";uses:="javax.servlet,org.apache.sling.api,org.apa
+ che.sling.api.servlets"
+Import-Package: com.day.cq.wcm.api;version="[1.27,2)",javax.annotation;v
+ ersion="[1.3,2)",javax.servlet;version="[3.1,4)",org.apache.sling.api;v
+ ersion="[2.3,3)",org.apache.sling.api.request;version="[2.4,3)",org.apa
+ che.sling.api.resource;version="[2.11,3)",org.apache.sling.api.servlets
+ ;version="[2.2,3)",org.apache.sling.models.annotations;version="[1.5,2)
+ ",org.apache.sling.models.annotations.injectorspecific;version="[1.1,2)
+ ",org.apache.sling.settings;version="[1.3,2)",org.osgi.service.event;ve
+ rsion="[1.3,2)",org.slf4j;version="[1.7,2)",javax.inject;version="0.0.0
+ "
+Provide-Capability: osgi.service;objectClass:List<String>="java.lang.Run
+ nable",osgi.service;objectClass:List<String>="javax.servlet.Filter",osg
+ i.service;objectClass:List<String>="javax.servlet.Servlet",osgi.service
+ ;objectClass:List<String>="org.osgi.service.event.EventHandler"
+Require-Capability: osgi.extender;filter:="(&(osgi.extender=osgi.compone
+ nt)(version>=1.3.0)(!(version>=2.0.0)))",osgi.ee;filter:="(&(osgi.ee=Ja
+ vaSE)(version=1.8))"
+Service-Component: OSGI-INF/sarb.core.filters.LoggingFilter.xml,OSGI-INF
+ /sarb.core.listeners.SimpleResourceListener.xml,OSGI-INF/sarb.core.sche
+ dulers.SimpleScheduledTask.xml,OSGI-INF/sarb.core.servlets.SimpleServle
+ t.xml
+Sling-Initial-Content: SLING-INF/content;path:=/libs/system/config;overw
+ rite:=true;
+Sling-Model-Packages: sarb.core.models
+Tool: Bnd-3.3.0.201609221906

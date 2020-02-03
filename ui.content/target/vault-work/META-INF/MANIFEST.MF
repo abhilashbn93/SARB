@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Implementation-Title: SARB Project - UI content
+Content-Package-Roots: /content/dam/sarb,/content/sarb
+Implementation-Version: 0.0.1-SNAPSHOT
+Build-Jdk-Spec: 1.8
+Content-Package-Type: content
+Created-By: Apache Jackrabbit FileVault - Package Maven Plugin 1.1.0
+Content-Package-Id: sarb-content-packages:sarb-site.ui.content:0.0.1-S
+ NAPSHOT
+Content-Package-Description: UI content package for SARB Project
+
